@@ -1,0 +1,13 @@
+/* Reset default margins and padding for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body for basic font and background */
+body {
+    font-family: 'Helvetica', Arial, sans-serif; /* Professional font stack */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f0f2f5; /* Light gray-blue background */
+}
