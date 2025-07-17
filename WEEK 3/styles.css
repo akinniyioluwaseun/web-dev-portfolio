@@ -106,3 +106,32 @@ nav ul li a:hover {
     border-radius: 5px; /* Rounded corners */
     margin-bottom: 10px; /* Space below image */
 }
+
+* Style form labels */
+label {
+    font-weight: bold; /* Bold labels for clarity */
+}
+
+/* Style form inputs and textarea */
+input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Space inside inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the submit button */
+button {
+    grid-column: 2 / 3; /* Place button in second column */
+    background-color: #1a3c34; /* Dark green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #2e5b4f; /* Lighter green on hover */
+}
