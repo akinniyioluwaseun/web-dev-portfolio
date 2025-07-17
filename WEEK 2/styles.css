@@ -1,0 +1,251 @@
+/* Reset default margins and padding for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body for basic font and background */
+body {
+    font-family: Arial, sans-serif; /* Clean, web-safe font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f9f9f9; /* Light gray background for a clean look */
+}
+
+/* Style the header for branding */
+header {
+    background-color: #2c3e50; /* Dark blue background for professional look */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add space inside header */
+    margin-bottom: 20px; /* Space below header */
+}
+
+/* Style the navigation bar */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center nav items */
+    background-color: #34495e; /* Slightly lighter blue than header */
+    padding: 10px; /* Space inside nav */
+}
+
+/* Style individual nav items */
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+/* Style nav links */
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add clickable area */
+    border: 1px solid #ccc; /* Light border around links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    background-color: #465c71; /* Darker blue on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Style the products section */
+#products {
+    padding: 20px; /* Space inside section */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style the product grid with Flexbox */
+.product-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    gap: 20px; /* Space between cards */
+}
+
+/* Style individual product cards */
+.product-card {
+    flex: 1 1 300px; /* Flexible width, minimum 300px */
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px; /* Space inside card */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* White background for contrast */
+    text-align: center; /* Center text in card */
+}
+
+/* Style product card images */
+.product-card img {
+    max-width: 100%; /* Ensure image doesn't overflow card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Enhance product card styling */
+.product-card {
+    flex: 1 1 300px; /* Flexible width, minimum 300px */
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px; /* Space inside card */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* White background */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Style the order section */
+#order {
+    padding: 20px; /* Space inside section */
+    max-width: 600px; /* Limit width for form */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style the form with Flexbox */
+#order form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+/* Style form labels */
+label {
+    font-weight: bold; /* Bold labels for clarity */
+}
+
+/* Style form inputs and select */
+input, select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Space inside inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable font size */
+}
+
+/* Style the submit button */
+button {
+    background-color: #2c3e50; /* Dark blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    align-self: center; /* Center button in flex container */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #465c71; /* Darker blue on hover */
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Adjust header padding for mobile */
+    header {
+        padding: 10px; /* Less padding */
+    }
+    /* Stack nav items vertically */
+    nav ul {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center items */
+    }
+    /* Adjust nav item spacing */
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+    /* Adjust product cards for mobile */
+    .product-grid {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    /* Ensure form inputs remain readable */
+    input, select {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+}
+
+/* Style the contact section */
+#contact {
+    padding: 20px; /* Space inside section */
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style contact details */
+#contact p {
+    margin-bottom: 10px; /* Space between contact details */
+}
+
+/* Style the embedded map */
+#contact iframe {
+    width: 100%; /* Full width for responsiveness */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space above map */
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Adjust header padding for mobile */
+    header {
+        padding: 10px; /* Less padding */
+    }
+    /* Stack nav items vertically */
+    nav ul {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center items */
+    }
+    /* Adjust nav item spacing */
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+    /* Adjust product cards for mobile */
+    .product-grid {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    /* Ensure form inputs remain readable */
+    input, select {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+    /* Adjust contact section for mobile */
+    #contact iframe {
+        height: 200px; /* Smaller map height for mobile */
+    }
+    /* Reduce heading sizes */
+    h1, h2 {
+        font-size: 1.5em; /* Smaller headings */
+    }
+}
+
+/* Enhance product card hover effect */
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for both */
+}
+
+/* Enhance button hover effect */
+button:hover {
+    background-color: #465c71; /* Darker blue */
+    transform: translateY(-2px); /* Slight lift effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Standard transition */
+    -webkit-transition: transform 0.3s, box-shadow 0.3s; /* For Safari */
+    -moz-transition: transform 0.3s, box-shadow 0.3s; /* For Firefox */
+}
+
+button:hover {
+    background-color: #465c71; /* Darker blue */
+    transform: translateY(-2px); /* Slight lift effect */
+    transition: background-color 0.3s, transform 0.3s; /* Standard transition */
+    -webkit-transition: background-color 0.3s, transform 0.3s; /* For Safari */
+    -moz-transition: background-color 0.3s, transform 0.3s; /* For Firefox */
+}
