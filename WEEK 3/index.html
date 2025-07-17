@@ -22,12 +22,12 @@
         <p>Expert geology services for your needs</p>
         <!-- Tagline describing services -->
     </header>
-    <nav>
-        <!-- Semantic nav for navigation links -->
+    <nav aria-label="Main navigation">
+        <!-- Semantic nav with aria-label for accessibility -->
         <ul>
             <!-- Unordered list for navigation items -->
-            <li><a href="#home">Home</a></li>
-            <!-- Link to home section -->
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <!-- Link to home section, aria-current for active page -->
             <li><a href="#services">Services</a></li>
             <!-- Link to services section -->
             <li><a href="#projects">Projects</a></li>
@@ -99,26 +99,27 @@
                 </div>
             </div>
             <!-- Modal for project 1 -->
-            <div id="project1-modal" class="modal">
+            <!-- Modal for project 1 -->
+            <div id="project1-modal" class="modal" role="dialog" aria-labelledby="project1-title">
                 <div class="modal-content">
-                    <a href="#projects" class="modal-close">Close</a>
-                    <h3>Mountain Survey Details</h3>
+                    <a href="#projects" class="modal-close" aria-label="Close modal">Close</a>
+                    <h3 id="project1-title">Mountain Survey Details</h3>
                     <p>Detailed geological survey in the Rockies, identifying key mineral deposits.</p>
                 </div>
             </div>
             <!-- Modal for project 2 -->
-            <div id="project2-modal" class="modal">
+            <div id="project2-modal" class="modal" role="dialog" aria-labelledby="project2-title">
                 <div class="modal-content">
-                    <a href="#projects" class="modal-close">Close</a>
-                    <h3>Desert Analysis Details</h3>
+                    <a href="#projects" class="modal-close" aria-label="Close modal">Close</a>
+                    <h3 id="project2-title">Desert Analysis Details</h3>
                     <p>Comprehensive mineral analysis in the Sahara, focusing on rare earth elements.</p>
                 </div>
             </div>
             <!-- Modal for project 3 -->
-            <div id="project3-modal" class="modal">
+            <div id="project3-modal" class="modal" role="dialog" aria-labelledby="project3-title">
                 <div class="modal-content">
-                    <a href="#projects" class="modal-close">Close</a>
-                    <h3>Coastal Study Details</h3>
+                    <a href="#projects" class="modal-close" aria-label="Close modal">Close</a>
+                    <h3 id="project3-title">Coastal Study Details</h3>
                     <p>Environmental study for sustainable coastal mining operations.</p>
                 </div>
             </div>
@@ -133,16 +134,16 @@
                     <!-- Grid container for form fields -->
                     <label for="name">Name:</label>
                     <!-- Label for name input -->
-                    <input type="text" id="name" name="name" required>
-                    <!-- Text input for name -->
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <!-- Text input for name with accessibility -->
                     <label for="email">Email:</label>
                     <!-- Label for email input -->
-                    <input type="email" id="email" name="email" required>
-                    <!-- Email input -->
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <!-- Email input with accessibility-->
                     <label for="message">Message:</label>
                     <!-- Label for message textarea -->
-                    <textarea id="message" name="message" required></textarea>
-                    <!-- Textarea for message -->
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                    <!-- Textarea for message with accessibility -->
                     <button type="submit">Send</button>
                     <!-- Submit button -->
                 </div>
