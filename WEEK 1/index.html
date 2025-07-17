@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the language to English for accessibility -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies character encoding for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsiveness by setting viewport to device width -->
+    <meta name="description" content="Personal portfolio of John Doe, a web developer.">
+    <!-- Add meta description for SEO -->
+    
+    <title>Akinniyi Personal Portfolio</title>
+    <!-- Sets the page title displayed in the browser tab -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+    <header>
+        <!-- Semantic header for the top section of the page -->
+        <h1>Akinniyi Oluwaseun - Web Developer</h1>
+        <!-- Main heading with your name and profession -->
+        <p>Building modern, responsive websites</p>
+        <!-- Tagline to describe your role -->
+    </header>
+    <nav aria-label="Main navigation">
+        <!-- Semantic nav for navigation links -->
+         <!-- Add aria-label for accessibility -->
+        <ul>
+            <!-- Unordered list for navigation items -->
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <!-- Link to home section -->
+            <!-- aria-current for active page -->
+            <li><a href="#about">About</a></li>
+            <!-- Link to about section -->
+            <li><a href="#projects">Projects</a></li>
+            <!-- Link to projects section -->
+            <li><a href="#contact">Contact</a></li>
+            <!-- Link to contact section -->
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my skills, projects, and get in touch!</p>
+        </section>
+        <section id="about">
+            <!-- Section for about content -->
+            <h2>About Me</h2>
+            <!-- Subheading for about section -->
+            <p>I’m a passionate web developer skilled in HTML, CSS, and more.</p>
+            <!-- Brief bio -->
+            <table>
+                <!-- Table to display skills -->
+                <thead>
+                    <!-- Table header for column titles -->
+                    <tr>
+                        <th>Skill</th>
+                        <!-- Column for skill name -->
+                        <th>Proficiency</th>
+                        <!-- Column for proficiency level -->
+                        <th>Years of Experience</th>
+                        <!-- Column for experience duration -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table body for skill data -->
+                    <tr>
+                        <td>HTML</td>
+                        <td>Advanced</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>0.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="projects">
+            <!-- Section for project showcase -->
+            <h2>My Projects</h2>
+            <!-- Subheading for projects section -->
+            <div class="project-grid">
+                <!-- Container for project cards -->
+                <div class="project-card">
+                    <!-- Individual project card -->
+                    <h3>Project 1</h3>
+                    <!-- Project title -->
+                    <p>A responsive portfolio website.</p>
+                    <!-- Project description -->
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce store for books.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A blog for tech enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <!-- Section for contact form -->
+            <h2>Contact Me</h2>
+            <!-- Subheading for contact section -->
+            <form aria-label="Contact form">
+                <!-- Form for user input -->
+                 <!-- Form with aria-label for accessibility -->
+                <label for="name">Name:</label>
+                <!-- Label for name input -->
+                <input type="text" id="name" name="name" required aria-required="true">
+                <!-- Text input for name, required for submission -->
+                <label for="email">Email:</label>
+                <!-- Label for email input -->
+                <input type="email" id="email" name="email" required aria-required="true">
+                <!-- Email input, required for submission -->
+                <label for="message">Message:</label>
+                <!-- Label for message textarea -->
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <!-- Textarea for multi-line message -->
+                <button type="submit">Send</button>
+                <!-- Submit button for the form -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Semantic footer for bottom content -->
+        <p>&copy; 2025 Akinniyi Oluwaseun</p>
+        <!-- Copyright notice -->
+            <ul class="social-links">
+                <!-- List for social media links -->
+                <li><a href="https://x.com/Gabriel_The_Don" target="_blank">Twitter</a></li>
+                <!-- Twitter link, opens in new tab -->
+                <li><a href="https://linkedin.com/in/oluwaseunakinniyi" target="_blank">LinkedIn</a></li>
+                <!-- LinkedIn link -->
+                <li><a href="https://github.com/akinniyioluwaseun" target="_blank">GitHub</a></li>
+                <!-- GitHub link -->
+            </ul>
+    </footer>
+</body>
+</html>

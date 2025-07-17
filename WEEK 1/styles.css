@@ -1,0 +1,228 @@
+/* Reset default margins and padding for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body for basic font and background */
+body {
+    font-family: Arial, sans-serif; /* Clean, web-safe font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Style the header for centering and background */
+header {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add space inside the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Style the navigation bar */
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the nav items */
+    background-color: #444; /* Slightly lighter background than header */
+    padding: 10px; /* Space inside the nav */
+}
+
+/* Style individual nav items */
+nav ul li {
+    margin: 10px 15px; /* Space between nav items */
+}
+
+/* Style nav links */
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add clickable area */
+    border: 1px solid #ccc; /* Light border around links */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+}
+
+/* Add hover effect for interactivity */
+nav ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+* Style the about section */
+#about {
+    padding: 20px; /* Add space inside the section */
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Style the table */
+table {
+    width: 100%; /* Make table full width */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-top: 20px; /* Space above table */
+}
+
+/* Style table headers and cells */
+th, td {
+    border: 1px solid #ccc; /* Light border for table cells */
+    padding: 10px; /* Space inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style table header */
+th {
+    background-color: #333; /* Dark background for headers */
+    color: white; /* White text for contrast */
+}
+
+/* Style the contact section */
+#contact {
+    padding: 20px; /* Add space inside the section */
+    max-width: 600px; /* Limit width for form */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Style form labels */
+label {
+    display: block; /* Make labels block for vertical stacking */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Style form inputs and textarea */
+input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Space inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the submit button */
+button {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5梦想px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Media query for screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+    /* Stack navigation items vertically */
+    nav ul {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items */
+    }
+    /* Adjust nav item spacing */
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for nav items */
+    }
+    /* Reduce header padding */
+    header {
+        padding: 10px; /* Less padding on mobile */
+    }
+    /* Adjust table font size for mobile */
+    th, td {
+        font-size: 14px; /* Smaller text for readability */
+        padding: 8px; /* Smaller padding */
+    }
+    /* Ensure form inputs remain usable */
+    input, textarea {
+        font-size: 16px; /* Larger font for mobile usability */
+    }
+}
+
+/* Style the projects section */
+#projects {
+    padding: 20px; /* Space inside section */
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style the project grid */
+.project-grid {
+    display: flex; /* Use flexbox for card layout */
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    gap: 20px; /* Space between cards */
+}
+
+/* Style individual project cards */
+.project-card {
+    flex: 1 1 250px; /* Flexible width, minimum 250px */
+    border: 1px solid #ccc; /* Light border */
+    padding: 15px; /* Space inside card */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* White background for contrast */
+}
+
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center content */
+    padding: 20px; /* Space inside footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Style social links list */
+.social-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
+    margin-top: 10px; /* Space above links */
+}
+
+/* Style social links */
+.social-links li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 5px; /* Clickable area */
+}
+
+/* Hover effect for social links */
+.social-links li a:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+/* Additional media query fixes for responsiveness */
+@media (max-width: 600px) {
+    /* Adjust project cards for mobile */
+    .project-grid {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    /* Ensure footer links stack on mobile */
+    .social-links {
+        flex-direction: column; /* Stack social links */
+        gap: 10px; /* Smaller gap */
+    }
+    /* Reduce font size for headings on mobile */
+    h1, h2 {
+        font-size: 1.5em; /* Smaller headings */
+    }
+}
+
+/* Define fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Start fully transparent */
+    to { opacity: 1; } /* End fully visible */
+}
+
+/* Apply animation to header */
+header {
+    animation: fadeIn 1s ease-in; /* Fade in over 1 second */
+}
+
+/* Add hover effect to project cards */
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    transition: transform 0.3s; /* Smooth scaling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
