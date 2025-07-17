@@ -135,3 +135,43 @@ button {
 button:hover {
     background-color: #2e5b4f; /* Lighter green on hover */
 }
+
+/* Style the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0; /* Cover full screen */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Show modal when targeted */
+.modal:target {
+    display: block; /* Show when linked */
+}
+
+/* Style modal content */
+.modal-content {
+    background-color: white; /* White background */
+    margin: 15% auto; /* Center modal */
+    padding: 20px; /* Space inside */
+    max-width: 500px; /* Limit width */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style modal close link */
+.modal-close {
+    display: block; /* Block display for link */
+    text-align: right; /* Align right */
+    color: #1a3c34; /* Dark green */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px; /* Space below */
+}
+
+/* Style modal trigger links */
+.modal-trigger {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}

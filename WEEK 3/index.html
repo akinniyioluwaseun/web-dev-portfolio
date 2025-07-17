@@ -76,22 +76,50 @@
                 <!-- Grid container for project cards -->
                 <div class="project-card">
                     <!-- Individual project card -->
-                    <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Geological survey in mountains">
-                    <!-- Project image with alt text -->
-                    <h3>Mountain Survey</h3>
-                    <!-- Project title -->
-                    <p>Conducted geological survey in the Rockies.</p>
-                    <!-- Project description -->
+                    <a href="#project1-modal" class="modal-trigger">
+                        <!-- Link to trigger modal -->
+                        <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Geological survey in mountains">
+                        <h3>Mountain Survey</h3>
+                        <p>Conducted geological survey in the Rockies.</p>
+                    </a>
                 </div>
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Mineral analysis in desert">
-                    <h3>Desert Analysis</h3>
-                    <p>Mineral deposit analysis in Sahara.</p>
+                    <a href="#project2-modal" class="modal-trigger">
+                        <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Mineral analysis in desert">
+                        <h3>Desert Analysis</h3>
+                        <p>Mineral deposit analysis in Sahara.</p>
+                    </a>
                 </div>
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Coastal environmental study">
-                    <h3>Coastal Study</h3>
-                    <p>Environmental impact study for coastal mining.</p>
+                    <a href="#project3-modal" class="modal-trigger">
+                        <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Coastal environmental study">
+                        <h3>Coastal Study</h3>
+                        <p>Environmental impact study for coastal mining.</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Modal for project 1 -->
+            <div id="project1-modal" class="modal">
+                <div class="modal-content">
+                    <a href="#projects" class="modal-close">Close</a>
+                    <h3>Mountain Survey Details</h3>
+                    <p>Detailed geological survey in the Rockies, identifying key mineral deposits.</p>
+                </div>
+            </div>
+            <!-- Modal for project 2 -->
+            <div id="project2-modal" class="modal">
+                <div class="modal-content">
+                    <a href="#projects" class="modal-close">Close</a>
+                    <h3>Desert Analysis Details</h3>
+                    <p>Comprehensive mineral analysis in the Sahara, focusing on rare earth elements.</p>
+                </div>
+            </div>
+            <!-- Modal for project 3 -->
+            <div id="project3-modal" class="modal">
+                <div class="modal-content">
+                    <a href="#projects" class="modal-close">Close</a>
+                    <h3>Coastal Study Details</h3>
+                    <p>Environmental study for sustainable coastal mining operations.</p>
                 </div>
             </div>
         </section>
