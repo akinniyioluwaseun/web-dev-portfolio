@@ -76,3 +76,33 @@ nav ul li a:hover {
     text-align: center; /* Center text */
 }
 
+/* Style the projects section */
+#projects {
+    padding: 20px; /* Space inside section */
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style the projects grid with CSS Grid */
+.projects-grid {
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+}
+
+/* Style individual project cards */
+.project-card {
+    background-color: white; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px; /* Space inside card */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+/* Style project card images */
+.project-card img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below image */
+}
