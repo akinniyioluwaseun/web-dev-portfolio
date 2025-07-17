@@ -11,3 +11,68 @@ body {
     line-height: 1.6; /* Improves readability */
     background-color: #f0f2f5; /* Light gray-blue background */
 }
+
+/* Style the header with CSS Grid */
+header {
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: 1fr; /* Single column for simplicity */
+    text-align: center; /* Center content */
+    background-color: #1a3c34; /* Dark green for professional look */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Space inside header */
+    margin-bottom: 20px; /* Space below header */
+}
+
+/* Style the navigation with Grid */
+nav {
+    background-color: #2e5b4f; /* Slightly lighter green */
+    padding: 10px; /* Space inside nav */
+}
+
+/* Style nav list with Grid */
+nav ul {
+    display: grid; /* Use Grid for nav items */
+    grid-template-columns: repeat(4, auto); /* 4 equal-width columns */
+    gap: 15px; /* Space between items */
+    justify-content: center; /* Center items */
+    list-style: none; /* Remove bullet points */
+}
+
+/* Style nav links */
+nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Clickable area */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    background-color: #3a6f5f; /* Darker green on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Style the services section */
+#services {
+    padding: 20px; /* Space inside section */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center section */
+}
+
+/* Style the services grid with CSS Grid */
+.services-grid {
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between cards */
+}
+
+/* Style individual service cards */
+.service-card {
+    background-color: white; /* White background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px; /* Space inside card */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
