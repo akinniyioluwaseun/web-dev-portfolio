@@ -128,3 +128,26 @@ button:hover {
     background-color: #c2185b; /* Lighter pink */
     transition: background-color 0.3s; /* Smooth transition */
 }
+
+/* Style the filter bar */
+.filter-bar {
+    display: flex; /* Use Flexbox for filter buttons */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons */
+    margin-bottom: 20px; /* Space below filter bar */
+}
+
+/* Style filter buttons */
+.filter-btn {
+    background-color: #d81b60; /* Vibrant pink */
+    color: white; /* White text */
+    padding: 8px 15px; /* Clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for filter buttons */
+.filter-btn:hover {
+    background-color: #c2185b; /* Lighter pink */
+}
