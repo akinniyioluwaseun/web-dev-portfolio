@@ -69,6 +69,29 @@
                 </div>
             </div>
         </section>
+        <section id="add-recipe">
+            <!-- Section for recipe submission form -->
+            <h2>Add Your Recipe</h2>
+            <!-- Subheading for add recipe section -->
+            <form id="recipe-form" aria-label="Recipe submission form">
+                <!-- Form with aria-label for accessibility -->
+                <div class="form-grid">
+                    <!-- Grid container for form fields -->
+                    <label for="recipe-name">Recipe Name:</label>
+                    <input type="text" id="recipe-name" name="recipe-name" required>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select Category</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="main">Main Dish</option>
+                        <option value="appetizer">Appetizer</option>
+                    </select>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                    <button type="submit">Add Recipe</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <!-- Semantic footer for bottom content -->
