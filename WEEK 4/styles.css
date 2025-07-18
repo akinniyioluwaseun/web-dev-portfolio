@@ -203,3 +203,17 @@ button:hover {
         font-size: 1.5em; /* Smaller for mobile */
     }
 }
+
+/* Hover effect for recipe cards */
+.recipe-card:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Enhance button hover effect */
+button:hover {
+    transform: translateY(-2px); /* Lift effect */
+    background-color: #c2185b; /* Lighter pink */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+}
