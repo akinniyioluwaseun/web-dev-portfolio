@@ -11,3 +11,44 @@ body {
     line-height: 1.6; /* Improves readability */
     background-color: #fff8e1; /* Light yellow background for warm feel */
 }
+
+/* Style the header with CSS Grid */
+header {
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: 1fr; /* Single column */
+    text-align: center; /* Center content */
+    background-color: #d81b60; /* Vibrant pink for lively feel */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Space inside header */
+    margin-bottom: 20px; /* Space below header */
+}
+
+/* Style the navigation with Grid */
+nav {
+    background-color: #ad1457; /* Darker pink for nav */
+    padding: 10px; /* Space inside nav */
+}
+
+/* Style nav list with Grid */
+nav ul {
+    display: grid; /* Use Grid for nav items */
+    grid-template-columns: repeat(4, auto); /* 4 equal-width columns */
+    gap: 15px; /* Space between items */
+    justify-content: center; /* Center items */
+    list-style: none; /* Remove bullet points */
+}
+
+/* Style nav links */
+nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Clickable area */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    background-color: #c2185b; /* Slightly lighter pink on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
