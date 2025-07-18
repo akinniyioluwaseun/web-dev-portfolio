@@ -22,12 +22,13 @@
         <p>Discover and share your favorite recipes</p>
         <!-- Tagline describing the site -->
     </header>
-    <nav>
+    <nav aria-label="Main navigation">
+        <!-- Semantic nav with aria-label for accessibility -->
         <!-- Semantic nav for navigation links -->
         <ul>
             <!-- Unordered list for navigation items -->
-            <li><a href="#home">Home</a></li>
-            <!-- Link to home section -->
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <!-- Link to home section, aria-current for active page -->
             <li><a href="#recipes">Recipes</a></li>
             <!-- Link to recipes section -->
             <li><a href="#add-recipe">Add Recipe</a></li>
@@ -51,10 +52,10 @@
             <!-- Subheading for recipes section -->
               <div class="filter-bar">
                 <!-- Filter bar for categories -->
-                <button class="filter-btn" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="dessert">Dessert</button>
-                <button class="filter-btn" data-filter="main">Main Dish</button>
-                <button class="filter-btn" data-filter="appetizer">Appetizer</button>
+                <button class="filter-btn" data-filter="all" aria-label="Show all recipes">All</button>
+                <button class="filter-btn" data-filter="dessert" aria-label="Show dessert recipes">Dessert</button>
+                <button class="filter-btn" data-filter="main" aria-label="Show main dish recipes">Main Dish</button>
+                <button class="filter-btn" data-filter="appetizer" aria-label="Show appetizer recipes">Appetizer</button>
             </div>
             <div class="recipes-grid">
                 <!-- Grid container for recipe cards -->
@@ -85,16 +86,16 @@
                 <div class="form-grid">
                     <!-- Grid container for form fields -->
                     <label for="recipe-name">Recipe Name:</label>
-                    <input type="text" id="recipe-name" name="recipe-name" required>
+                    <input type="text" id="recipe-name" name="recipe-name" required aria-required="true">
                     <label for="category">Category:</label>
-                    <select id="category" name="category" required>
+                    <select id="category" name="category" required aria-required="true">
                         <option value="">Select Category</option>
                         <option value="dessert">Dessert</option>
                         <option value="main">Main Dish</option>
                         <option value="appetizer">Appetizer</option>
                     </select>
                     <label for="description">Description:</label>
-                    <textarea id="description" name="description" required></textarea>
+                    <textarea id="description" name="description" required aria-required="true"></textarea>
                     <button type="submit">Add Recipe</button>
                 </div>
             </form>
@@ -107,11 +108,11 @@
                 <div class="form-grid">
                     <!-- Grid container for form fields -->
                     <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" name="contact-name" required>
+                    <input type="text" id="contact-name" name="contact-name" required aria-required="true">
                     <label for="contact-email">Email:</label>
-                    <input type="email" id="contact-email" name="contact-email" required>
+                    <input type="email" id="contact-email" name="contact-email" required aria-required="true">
                     <label for="contact-message">Message:</label>
-                    <textarea id="contact-message" name="contact-message" required></textarea>
+                    <textarea id="contact-message" name="contact-message" required aria-required="true"></textarea>
                     <button type="submit">Send</button>
                 </div>
             </form>

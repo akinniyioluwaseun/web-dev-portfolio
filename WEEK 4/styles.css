@@ -123,12 +123,6 @@ button {
     cursor: pointer; /* Pointer cursor */
 }
 
-/* Hover effect for button */
-button:hover {
-    background-color: #c2185b; /* Lighter pink */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
 /* Style the filter bar */
 .filter-bar {
     display: flex; /* Use Flexbox for filter buttons */
@@ -217,3 +211,4 @@ button:hover {
     background-color: #c2185b; /* Lighter pink */
     transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
 }
+
